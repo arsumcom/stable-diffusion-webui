@@ -10,7 +10,7 @@ install_dir="/workspace"
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-export COMMANDLINE_ARGS="--share --api --listen --precision full --no-half --port 7888 --xformers --ckpt /workspace/stable-diffusion-webui/models/Stable-diffusion/Deliberate_v2.safetensors"
+export COMMANDLINE_ARGS="--share --api --listen --precision full --no-half --port 7888 --xformers --ckpt /workspace/stable-diffusion-webui/models/Stable-diffusion/Deliberate_v2.safetensors --skip-torch-cuda-test"
 
 # python3 executable
 #python_cmd="python3"
