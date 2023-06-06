@@ -4,13 +4,13 @@
 #########################################################
 
 # Install directory without trailing slash
-#install_dir="/home/$(whoami)"
+install_dir="/workspace"
 
 # Name of the subdirectory
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-#export COMMANDLINE_ARGS=""
+export COMMANDLINE_ARGS="--api --listen --precision full --no-half --port 7888 --xformers --ckpt /workspace/stable-diffusion-webui/models/Stable-diffusion/Deliberate_v2.safetensors"
 
 # python3 executable
 #python_cmd="python3"
@@ -19,7 +19,7 @@
 #export GIT="git"
 
 # python3 venv without trailing slash (defaults to ${install_dir}/${clone_dir}/venv)
-#venv_dir="venv"
+venv_dir="/workspace/stable-diffusion-webui/venv"
 
 # script to launch to start the app
 #export LAUNCH_SCRIPT="launch.py"
